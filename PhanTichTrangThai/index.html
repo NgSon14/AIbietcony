@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Phân Tích & Ghép Đôi Tình Yêu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="love-container">
+    <!-- Cột trái: nhập dữ liệu -->
+    <div class="left-panel">
+      <h2>💖 Phân tích trạng thái AI 💖</h2>
+      <input type="text" id="username" placeholder="Nhập tên của bạn...">
+      <input type="number" id="age" placeholder="Nhập tuổi...">
+      <select id="gender">
+        <option value="">-- Chọn giới tính --</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+        <option value="Khác">Khác</option>
+      </select>
+      <input type="text" id="phone" placeholder="Nhập số điện thoại...">
+      <input type="text" id="linkface" placeholder="Nhập link Facebook...">
+      <textarea id="statusInput" placeholder="Nhập status của bạn..."></textarea>
+      
+      <!-- Phân tích ảnh -->
+      <div class="image-upload">
+        <input type="file" id="imageInput" accept="image/*" style="display:none;">
+        <button id="uploadImageBtn">📷 Tải ảnh lên để phân tích</button>
+        <div id="imagePreview" style="display:none;">
+          <img id="previewImg" src="" alt="Preview">
+          <button id="analyzeImageBtn">🔍 Phân tích ảnh</button>
+        </div>
+      </div>
+
+      <!-- Nút chức năng -->
+      <button id="sampleBtn">📌 Chọn Dữ Liệu Mẫu</button>
+      <button id="uploadBtn">📂 Tải Tệp Dữ Liệu</button>
+      <input type="file" id="fileInput" style="display:none;" />
+      <button id="saveBtn">💾 Lưu Thông Tin</button>
+      <button id="matchBtn">💞 Ghép Đôi</button>
+      <button id="analyzeBtn">🔮 Phân Tích</button>
+      <button id="clearBtn">🧹 Xóa</button>
+    </div>
+
+    <!-- Cột phải: kết quả -->
+    <div class="right-panel">
+      <h2>🌹 Kết Quả Phân Tích 🌹</h2>
+      <div id="resultBox">Kết quả sẽ hiển thị tại đây...</div>
+    </div>
+  </div>
+
+  <!-- Hiệu ứng trái tim bay -->
+  <div class="hearts"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
